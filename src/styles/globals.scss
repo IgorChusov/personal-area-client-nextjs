@@ -1,0 +1,87 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
+      url('/public/assets/fonts/PTRootUI-Medium.woff2') format('woff2'),
+      url('/public/assets/fonts/PTRootUI-Medium.woff') format('woff'),;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+
+  src: local('PT Root UI Light'), local('PTRootUI-Light'),
+      url('/public/assets/fonts/PTRootUI-Light.woff2') format('woff2'),
+      url('/public/assets/fonts/PTRootUI-Light.woff') format('woff'),;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: local('PT Root UI'), local('PTRootUI-Regular'),
+      url('/public/assets/fonts/PTRootUI-Regular.woff2') format('woff2'),
+      url('/public/assets/fonts/PTRootUI-Regular.woff') format('woff'),;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
+      url('/public/assets/fonts/PTRootUI-Bold.woff2') format('woff2'),
+      url('/public/assets/fonts/PTRootUI-Bold.woff') format('woff'),;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Root UI', sans-serif;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Root UI', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

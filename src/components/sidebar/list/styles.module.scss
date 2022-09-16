@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    a {
+      display: flex;
+      align-items: center;
+      color: $colorGrey;
+
+      span:last-child {
+        display: block;
+        margin-left: 23px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+      }
+    }
+
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

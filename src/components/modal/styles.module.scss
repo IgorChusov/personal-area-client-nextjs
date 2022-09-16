@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  max-width: 300px; 
+  width: 100%;
+  background-color: $colorMiddleBlue;
+  z-index: 1000;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: hidden;
+  box-shadow: 0px 4px 4px 4px #00000040;
+  border-radius: 4px;
+  
+  input:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  input:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  button {
+    padding: 20px;
+    color: #fff;
+    border: 1px solid ;
+    border-radius: 4px;
+    background-color: $colorBackgroundDark;
+  }
+}

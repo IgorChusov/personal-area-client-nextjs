@@ -1,0 +1,35 @@
+.list {
+  display: flex;
+
+
+  .item {
+    a {
+      display: flex;
+      color: $colorTextWhite;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 400;
+    }
+  }
+
+  .item:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 39px 80px 39px 309px;
+  margin-bottom: 27px;
+}
+
+.btn {
+  display: flex;
+  max-width: 150px;
+  margin-left: auto;
+  padding: 5px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+}

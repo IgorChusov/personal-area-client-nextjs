@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  padding: 211px 66px 39px 127px;
+  max-width: 1236px;
+  width: 100%;
+  min-height: calc(100vh - 117px);
+  background-color: $colorMiddleBlue;
+  border: 1px solid #000000;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(131px, 1fr));
+  gap: 35px;
+  width: 100%;
+}
+
+@media all and (max-width: 1024px){
+  .container {
+    max-width: 100%
+  }
+}
+@media all and (max-width: 768px){
+  .container {
+    padding: 111px 20px 39px 50px;
+  }
+}

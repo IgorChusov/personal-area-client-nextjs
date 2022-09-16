@@ -1,0 +1,42 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  margin-right: 13px;
+  min-width: 186px;
+  padding: 18px 0 0 35px;
+  position: relative;
+}
+
+.burger {
+  display: none;
+}
+
+.mobile {
+  padding: 40px 50px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background-color: $colorBackgroundDark;
+  z-index: 10;
+  border-radius: 7px;
+  height: calc(100% - 80px);
+  width: 260px;
+}
+
+.mobileView {
+  transform: translateX(100%);
+}
+@media all and (max-width:1024px) {
+  .aside {
+    min-width: unset;
+  }
+
+  .full {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+}

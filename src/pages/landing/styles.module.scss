@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  padding-right: 14px;
+}
+
+
+@media all and (max-width: 1024px) {
+  .section {
+    padding: 0 14px;
+  }
+}
